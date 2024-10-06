@@ -18,7 +18,7 @@ io.on('connection', (socket) =>{
 
     socket.on('chat message', (data) =>{
         console.log(data)
-        io.emit('chat message', {user: data.user, message: data.message, time: data.time});
+        io.emit('chat message', {user: data.user,Sala:data.Sala, message: data.message, time: data.time});
         
     })
 
